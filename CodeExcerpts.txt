@@ -1,0 +1,58 @@
+
+This is some code to Sudoku that basically eliminates permutation possiblities, that way if running through permutations for each slot, one does not need
+to go with every single number from 1 to 9, but perhaps only 2 to 5 numbers depending on the slot.
+
+
+
+/*
+        public void reducePosibilities()
+        {
+
+            // this fills any x,y coordinate that has not been filled, with 0-8
+            // and from that can deduction take place
+            for (int x = 0; x <= 8; x++)
+            {
+                for (int y = 0; y <= 8; y++)
+                {
+                    if (grid[x, y, 9] == 0)
+                    {
+                        // this xy coordinates have 9 numbers to choose from
+                        grid[x, y, 10] = 9;
+                        for (int n = 0; n <= 8; n++)
+                        {
+                            // saving 0-8 to each slot
+                            grid[x, y, n] = n;
+                        }
+                        for (int n = 0; n <= 8; n++)
+                        {
+                            removeUsedNumbers(x, y, n);
+                        }
+                    }
+                }
+            }
+        }
+
+        public void setPermutationPerSlot(int x, int y)
+        {
+            //Range.(start, length of third dimension of grid)
+            //it counts from start to finish and for each step, performs the following task i.e. .Count
+            // .Count returns only elements that are not equal to 10, and range adds how many elements
+            // were passed by .Count
+            grid[x, y, 10] = grid[x, y, 10] - 1;
+
+            //this code didn't work:
+            //Enumerable.Range(0, grid.GetLength(2) - 3).Count(i => grid[x, y, i] != 10);
+        }
+
+        //removes any numbers that are in the same row, column, or box; from that slot's inventory
+        public void removeUsedNumbers(int x, int y, int n)
+        {
+            if (boxCheck(x, y, n, 9) || columnCheck(x, y, n, 9) || rowCheck(x, y, n, 9))
+            {
+                grid.SetValue(10, x, y, n);
+                setPermutationPerSlot(x, y);
+            }
+        }
+
+        */
+

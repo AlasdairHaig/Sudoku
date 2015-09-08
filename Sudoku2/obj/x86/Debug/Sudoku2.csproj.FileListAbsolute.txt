@@ -1,0 +1,3 @@
+C:\Users\b.wood\Documents\Visual Studio 2010\Projects\Sudoku2\Sudoku2\obj\x86\Debug\Soduku.Soduku.resources
+C:\Users\b.wood\Documents\Visual Studio 2010\Projects\Sudoku2\Sudoku2\obj\x86\Debug\Sudoku2.Properties.Resources.resources
+C:\Users\b.wood\Documents\Visual Studio 2010\Projects\Sudoku2\Sudoku2\obj\x86\Debug\Sudoku2.csproj.GenerateResource.Cache
